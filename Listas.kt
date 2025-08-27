@@ -62,9 +62,41 @@ fun main(){
 
 
     // ejercicio
+    //1. sumar los elementos impares
+    //2. crear una lista con todos los elementos sucesores
+    //3. obtener el primer elemento que sea divisible por 4
+    //4. sumar el primer y el ultimo elemento
+    //5. crear una lista con los elementos mayores a 10
+    //6. agregar 7,9 y 11 a la lista
+
+    //lista
     var lista = mutableListOf(3, 5, 45, 9, 2, 30)
 
+    //1:
     var listaimpares = lista.filter{it % 2 != 0}
+    println("suma de los elementos impares de la lista: " + listaimpares.sum())
+
+    //2:
+    var listasucesores = lista.map{it + 1}
+    println("lista con todos los elementos sucesores: " + listasucesores)
+
+    //3:
+    var divisible4 = lista.find{it % 4 == 0}
+    println("primer elemento divisible por 4: " + divisible4)
+
+    //4:
+    var sumaprimerultimo = lista.first() + lista.last()
+    println("suma del primer y ultimo elemento de la lista: " + sumaprimerultimo)
+
+    //5:
+    var listamayor10 = lista.filter{it > 10}
+    println("lista con los elementos mayores a 10: " + listamayor10)
+
+    //6:
+    lista.add(7)
+    lista.add(9)
+    lista.add(11)
+    println("lista con los elementos agregados: " + lista)
 
 
 
