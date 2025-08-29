@@ -25,4 +25,16 @@ fun main(){
 
     }
 
+    // for in en kotlin
+    val lista = listOf(7,3,15)
+    println("lista: $lista")
+
+    for(i in lista){
+        println("valor i: $i")
+    }
+
+    val map =  mapOf("a" to 2, "b" to 3)
+    map.forEach{
+        (llave, valor) -> println("la llave es $llave el valor es $valor")
+    }
 }
